@@ -82,6 +82,9 @@ affinity: |
             app: {{ template "vault.fullname" . }}
             release: {{ .Release.Name }}
 
+## Deployment tolerations
+tolerations: []
+
 ## Deployment annotations
 annotations: {}
 

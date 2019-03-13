@@ -131,6 +131,8 @@ spec:
       affinity:
 {{ tpl .Values.affinity . | indent 8 }}
       {{- end }}
+      tolerations:
+{{ toYaml .Values.tolerations | indent 8 }}
       volumes:
         - name: vault-config
           configMap:
